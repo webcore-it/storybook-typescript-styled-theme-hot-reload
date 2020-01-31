@@ -1,0 +1,67 @@
+{
+  "name": "storybook-typescript-styled-theme-hot-reload",
+  "version": "0.0.1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/webcore-it/storybook-typescript-styled-theme-hot-reload"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "postinstall": "rimraf node_modules/@types/react-native",
+    "start": "start-storybook -p 6006",
+    "format": "prettier --config .prettierrc --write \"src/**/*.{ts,tsx}\" \"stories/**/*.{ts,tsx}\"",
+    "lint": "tslint -c tslint.json \"src/**/*.{ts,tsx}\" \"stories/**/*.{ts,tsx}\"",
+    "pre-commit": "npm run format && npm run lint"
+  },
+  "dependencies": {
+    "@callstack/react-theme-provider": "^3.0.5",
+    "@types/styled-components": "4.4.2",
+    "lodash": "^4.17.15",
+    "react": "^16.12.0",
+    "styled-components": "5.0.0"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@storybook/addon-actions": "^5.3.9",
+    "@storybook/addon-info": "^5.3.9",
+    "@storybook/addon-knobs": "^5.3.9",
+    "@storybook/addon-links": "^5.3.9",
+    "@storybook/addon-options": "^5.3.9",
+    "@storybook/react": "^5.3.9",
+    "@types/jest": "^24.9.0",
+    "@types/lodash": "^4.14.149",
+    "@types/node": "^13.1.8",
+    "@types/react": "^16.9.18",
+    "@types/react-dom": "^16.9.5",
+    "@types/react-test-renderer": "^16.9.1",
+    "@types/storybook-addon-jsx": "^7.0.1",
+    "@types/storybook__addon-info": "^5.2.1",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-loader": "^8.0.6",
+    "cpx": "^1.5.0",
+    "jest": "^24.9.0",
+    "npm": "^6.13.6",
+    "prettier": "^1.19.1",
+    "react-docgen-typescript-loader": "^3.6.0",
+    "react-docgen-typescript-webpack-plugin": "^1.1.0",
+    "react-dom": "^16.12.0",
+    "react-test-renderer": "^16.12.0",
+    "rimraf": "^3.0.0",
+    "ts-jest": "^24.3.0",
+    "tslint": "^5.20.1",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.1.0",
+    "tslint-react": "^4.2.0",
+    "typescript": "^3.7.5"
+  }
+}
