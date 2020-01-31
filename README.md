@@ -9,7 +9,7 @@ npm start
 ```
 2. Change the `backgroundColor` in the file `themes/theme-first.json` from `blue` to `red` and save the file.
 
-In the console the will be a note from webpack which is aware of the modification, but the browser will still show a blue button, not a red one.
+In the console there will be a note from webpack, which looks like it is aware of the modification, but the browser will still show a blue button, not a red one.
 
 3. Reload the browser manually to see the change of the color.
 
